@@ -30,9 +30,18 @@ a {
     text-decoration: none;
 }
 
+input:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
 body {
     min-height: 100vh;
     background-color: var(--white);
+    scroll-behavior:smooth;
 }
 
 header {
@@ -60,6 +69,16 @@ nav {
     padding: 1.5rem;
 }
 
+nav ul li {
+    font-weight: 500;
+    
+}
+
+nav ul li a:hover {
+    color: var(--light-purple);
+    transition: all 0.3s ease-in-out;
+}
+
 .nav-logo img {
     width: 5.5rem;
     background-color: var(--white);
@@ -69,7 +88,7 @@ nav {
     position: relative;
 }
 
-.nav-home, .nav-about, .nav-features, .nav-vision {
+.nav-home, .nav-about, .nav-features, .nav-vision, .nav-contact{
     display: none;
 }
 
@@ -78,6 +97,12 @@ nav {
     padding: 0.55rem 1rem;
     color: var(--white);
     border-radius: 5px;
+}
+
+.nav-request-features a:hover {
+    color: var(--white);
+    background-color: var(--light-purple);
+    transition: all 0.3s ease-in-out;
 }
 
 .hero-section {
@@ -138,7 +163,7 @@ nav {
     align-items: center;
 }
 
-.android-apple-links div {
+.android-apple-links a {
     background-color: black;
     color: white;
     padding: 0.5rem 1rem;
@@ -149,6 +174,12 @@ nav {
     width: 11rem;
     justify-content: center;
     align-items: flex-start;
+    cursor: pointer;
+}
+
+.android-apple-links a:hover {
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
 }
 
 .mockup img {
@@ -537,6 +568,7 @@ footer {
 
 .email-holder input {
     height: 2.5rem;
+    padding: 0 1rem;
     background-color: var(--white);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -700,11 +732,11 @@ footer {
         max-width: 55rem;
     }
 
-    .nav-home, .nav-about, .nav-features, .nav-vision {
+    .nav-home, .nav-about, .nav-features, .nav-vision, .nav-contact {
         display: inline;
     }
 
-    .nav-home a, .nav-about a, .nav-features a, .nav-vision a {
+    .nav-home a, .nav-about a, .nav-features a, .nav-vision a, .nav-contact a {
         color: var(--dark-purple);
     }
 
