@@ -256,7 +256,7 @@ nav {
 
 iframe {
     border: none;
-    width: 25rem;
+    width: 20rem;
     height: 21.5rem;
 }
 
@@ -420,6 +420,7 @@ iframe {
 .testimonial-card p {
     color: var(--very-dark-purple);
     opacity: 0.8;
+    text-align: justify;
 }
 
 .testimonial-card h6 {
@@ -531,13 +532,21 @@ footer {
     }
     
     footer {
-        background-color: var(--very-dark-purple);
-        padding: 2rem;
-        display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: flex-end;
         gap: 4rem;
+    }   
+}
+
+@media screen and (min-width: 768px){
+    .stats {
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
     }
-    
+
+    iframe {
+        width: 30rem;
+    }
 }
