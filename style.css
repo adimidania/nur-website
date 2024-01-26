@@ -127,7 +127,7 @@ nav {
 .android-apple-links {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     gap: 1rem;
     align-items: center;
 }
@@ -256,7 +256,7 @@ nav {
 
 iframe {
     border: none;
-    width: 20rem;
+    width: 25rem;
     height: 21.5rem;
 }
 
@@ -481,14 +481,14 @@ footer {
     gap: 0.8rem;
 }
 
-.partnerships > h2 {
+.partnership-text > h2 {
     font-size: var(--small-headings-mobile);
     color: var(--white);
     opacity: 0.8;
     text-align: center;
 }
 
-.partnerships > p {
+.partnership-text > p {
     font-size: var(--small-paragraphs-mobile);
     color: var(--white);
     opacity: 0.8;
@@ -523,4 +523,21 @@ footer {
     border-bottom-left-radius: 5px;
     border: none;
     width: calc(100% - 2.5rem);
+}
+
+@media screen and (min-width: 480px){
+    .android-apple-links {
+        flex-direction: row;
+    }
+    
+    footer {
+        background-color: var(--very-dark-purple);
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 4rem;
+    }
+    
 }
