@@ -39,6 +39,9 @@ header {
     display: flex;
     flex-direction: column;
     background-color: var(--dark-purple);
+    background-image: url('assets/waves.svg');
+    background-repeat:repeat-y;
+    background-size: cover;
 }
 
 header nav ul {
@@ -161,6 +164,9 @@ nav {
 .about-app {
     padding: 3rem;
     background-color: var(--white);
+    background-image: url('assets/circles.svg');
+    background-repeat:repeat;
+    background-size: cover;
 }
 
 .about-app h1 {
@@ -228,6 +234,9 @@ nav {
 .app-features {
     padding: 2rem;
     background-color: var(--light-purple);
+    background-image: url('assets/waves.svg');
+    background-repeat:repeat-y;
+    background-size: cover;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -269,7 +278,11 @@ iframe {
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    margin-top: 10rem;
+    padding-top: 10rem;
+    background-image: url('assets/circles.svg');
+    background-repeat:repeat;
+    background-size: cover;
+
 }
 
 .download-vision .download .download-links {
@@ -291,13 +304,6 @@ iframe {
     opacity: 0.8;
     margin: 1.5rem 0;
     text-align: justify;
-}
-
-.download-vision .download {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    gap: 5rem;
 }
 
 .stats {
@@ -346,7 +352,6 @@ iframe {
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    background-color: var(--white);
 }
 
 .vision h1 {
@@ -393,6 +398,9 @@ iframe {
 
 .testimonials {
     background-color: var(--dark-purple);
+    background-image: url('assets/waves.svg');
+    background-repeat: repeat;
+    background-size: cover;
     padding: 2rem;
 }
 
@@ -638,8 +646,14 @@ footer {
 
     .download-vision .download {
         flex-direction: row;
-        padding: 2rem;
         gap: 5rem;
+    }
+
+    .download-vision .download .download-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
     }
 
     .stat {
@@ -678,8 +692,28 @@ footer {
         padding: 2rem 4rem;
     }
 
+    .download-vision {
+        padding-top: 10rem;
+    }
+
     .testimonial-card {
         max-width: 55rem;
+    }
+
+    .nav-home, .nav-about, .nav-features, .nav-vision {
+        display: inline;
+    }
+
+    .nav-home a, .nav-about a, .nav-features a, .nav-vision a {
+        color: var(--dark-purple);
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 1rem;
     }
     
 }
