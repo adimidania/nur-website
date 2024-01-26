@@ -1,0 +1,526 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --very-dark-purple: #1C1724;
+    --dark-purple: #1B0B3B;
+    --light-purple: #AB7AAE;
+    --grayish-white: #D9D9D9;
+    --white: #fcf7fc;
+    --big-headings-mobile: 2.25rem;
+    --small-headings-mobile: 1.15rem;
+    --small-paragraphs-mobile: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--white);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-purple);
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 1rem;
+}
+
+nav {
+    border-radius: 5px;
+    background-color: var(--white);
+    font-size: 0.9rem;
+    margin: 2rem;
+    padding: 1.5rem;
+}
+
+.nav-logo img {
+    width: 5.5rem;
+    background-color: var(--white);
+    padding: 0.75rem;
+    border-radius: 5px;
+    height: auto;
+    position: relative;
+}
+
+.nav-home, .nav-about, .nav-features, .nav-vision {
+    display: none;
+}
+
+.nav-request-features a {
+    background-color: var(--dark-purple);
+    padding: 0.55rem 1rem;
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem 2rem;
+}
+
+.app-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-description h1 {
+    font-size: var(--big-headings-mobile);
+    color: var(--white);
+    margin: 1rem 0;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.app-description h1 span {
+    color: var(--light-purple);
+}
+
+.app-description > p {
+    font-size: var(--small-paragraphs-mobile);
+    color: var(--white);
+    margin: 1rem 0;
+    margin-bottom: 2rem;
+    text-align: justify;
+    opacity: 0.65;
+}
+
+.hero-section .download {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.hero-section  .download > h2 {
+    font-size: var(--small-headings-mobile);
+    font-weight: 600;
+    color: var(--grayish-white);
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.android-apple-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    align-items: center;
+}
+
+.android-apple-links div {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    display: flex; 
+    gap: 1rem;
+    width: 11rem;
+    
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mockup img {
+    width: 20rem;
+    height: auto;
+}
+
+.android-apple-links img {
+    width: 30px;
+    height: auto;
+}
+
+.about-app {
+    padding: 3rem;
+    background-color: var(--white);
+}
+
+.about-app h1 {
+    font-size: var(--big-headings-mobile);
+    color: var(--dark-purple);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.about-app > p {
+    font-size: var(--small-paragraphs-mobile);
+    color: var(--very-dark-purple);
+    opacity: 0.8;
+    margin: 2rem 0;
+    text-align: justify;
+}
+
+.about-app-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-app-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.about-app-1-cards, .about-app-2-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about-app-2-cards .card, .about-app-1-cards .card {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    background-color: var(--white);
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-app-2-cards .card h2, .about-app-1-cards .card h2{
+    font-size: var(--small-headings-mobile);
+}
+
+.about-app-2-cards .card p, .about-app-1-cards .card p {
+    text-align: justify;
+    font-size: var(--small-paragraphs-mobile);
+    color: var(--very-dark-purple);
+    opacity: 0.8;
+}
+
+.check-icon img {
+    margin: 2px;
+}
+
+.app-features {
+    padding: 2rem;
+    background-color: var(--light-purple);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-features h1 {
+    font-size: var(--big-headings-mobile);
+    color: var(--white);
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.app-features > p {
+    font-size: var(--small-paragraphs-mobile);
+    color: var(--white);
+    opacity: 0.8;
+    text-align: justify;
+    position: relative;
+    top: 4rem;
+    
+}
+
+.video-preview {
+    position: relative;
+    top:10rem;
+}
+
+iframe {
+    border: none;
+    width: 20rem;
+    height: 21.5rem;
+}
+
+.download-vision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 10rem;
+}
+
+.download-vision .download .download-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.download-vision .download .download-links h2 {
+    font-size: var(--small-headings-mobile);
+    color: var(--dark-purple);
+}
+
+.download-vision .download .download-links > p {
+    font-size: var(--small-paragraphs-mobile);
+    color: var(--very-dark-purple);
+    opacity: 0.8;
+    margin: 1.5rem 0;
+    text-align: justify;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    margin: 2rem 0;
+    margin-top: 4rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.stat img {
+    width: 1.25rem;
+    height: auto;
+}
+
+.stat p {
+    font-size: 0.9rem;
+}
+
+.stats > div {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--dark-purple);
+    width: 10rem;
+    padding: 1rem;
+    border-radius: 5px;
+    color: var(--white);
+}
+
+.vision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--white);
+}
+
+.vision h1 {
+    font-size: var(--big-headings-mobile);
+    color: var(--dark-purple);
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.vision > div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+.vision > div > div h2 {
+    font-size: var(--small-headings-mobile);
+    color: var(--dark-purple);
+    text-align: justify;
+}
+
+.vision > div > div p {
+    font-size: var(--small-paragraphs-mobile);
+    color: var(--very-dark-purple);
+    opacity: 0.8;
+    margin: 0.25rem 0;
+    text-align: justify;
+}
+
+.vision > div > div {
+    width: 95%;
+}
+
+.vision img {
+    margin-top: 5px;
+    width: 2.5rem;
+    height: auto;
+}
+
+.testimonials {
+    background-color: var(--dark-purple);
+    padding: 2rem;
+}
+
+.testimonials h1 {
+    font-size: var(--big-headings-mobile);
+    margin: 1rem 0;
+    color: var(--white);
+    text-align: center;
+}
+
+.testimonials > p {
+    font-size: var(--small-paragraphs-mobile);
+    color: var(--grayish-white);
+    opacity: 0.8;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.testimonials-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.testimonial-card {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.testimonial-card p {
+    color: var(--very-dark-purple);
+    opacity: 0.8;
+}
+
+.testimonial-card h6 {
+    color: var(--dark-purple);
+    font-size: var(--small-headings-mobile);
+    margin: 1rem 0;
+}
+
+.buttons button {
+    border: none;
+    background-color: var(--white);
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: var(--very-dark-purple);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.socials > p {
+    font-size: var(--small-paragraphs-mobile);
+    color: var(--white);
+    opacity: 0.8;
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.socials > img {
+    width: 5rem;
+    height: auto;
+}
+
+.partnerships {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.partnerships > h2 {
+    font-size: var(--small-headings-mobile);
+    color: var(--white);
+    opacity: 0.8;
+    text-align: center;
+}
+
+.partnerships > p {
+    font-size: var(--small-paragraphs-mobile);
+    color: var(--white);
+    opacity: 0.8;
+    margin: 0.5rem 0;
+    text-align: justify;
+}
+
+.email-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.email-holder button {
+    border: none;
+    background-color: var(--light-purple);
+    display: flex;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.email-holder input {
+    height: 2.5rem;
+    background-color: var(--white);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    width: calc(100% - 2.5rem);
+}
