@@ -10,6 +10,9 @@
     --big-headings-mobile: 2.25rem;
     --small-headings-mobile: 1.15rem;
     --small-paragraphs-mobile: 1rem;
+    --big-headings-desktop: 2.5rem;
+    --small-headings-desktop: 1.25rem;
+    --small-paragraphs-desktop: 1.1rem;
 }
 
 * {
@@ -141,7 +144,6 @@ nav {
     display: flex; 
     gap: 1rem;
     width: 11rem;
-    
     justify-content: center;
     align-items: flex-start;
 }
@@ -209,6 +211,7 @@ nav {
 
 .about-app-2-cards .card h2, .about-app-1-cards .card h2{
     font-size: var(--small-headings-mobile);
+    color: var(--dark-purple);
 }
 
 .about-app-2-cards .card p, .about-app-1-cards .card p {
@@ -235,7 +238,7 @@ nav {
 .app-features h1 {
     font-size: var(--big-headings-mobile);
     color: var(--white);
-    margin-top: 3rem;
+    margin-top: 2rem;
     text-align: center;
 }
 
@@ -290,6 +293,13 @@ iframe {
     text-align: justify;
 }
 
+.download-vision .download {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 5rem;
+}
+
 .stats {
     display: flex;
     flex-direction: column;
@@ -317,10 +327,9 @@ iframe {
     font-size: 0.9rem;
 }
 
-.stats > div {
+.stat {
     display: flex;
     flex-direction: column;
-    
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -419,6 +428,7 @@ iframe {
 
 .testimonial-card p {
     color: var(--very-dark-purple);
+    font-size: var(--small-paragraphs-mobile);
     opacity: 0.8;
     text-align: justify;
 }
@@ -526,6 +536,8 @@ footer {
     width: calc(100% - 2.5rem);
 }
 
+/* Media Queries */
+/* Huge phone */
 @media screen and (min-width: 480px){
     .android-apple-links {
         flex-direction: row;
@@ -534,11 +546,24 @@ footer {
     footer {
         flex-direction: row;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center;
         gap: 4rem;
     }   
+
+    .partnerships h2 {
+        text-align: left;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
 }
 
+/* Tablet */
 @media screen and (min-width: 768px){
     .stats {
         flex-direction: row;
@@ -549,4 +574,112 @@ footer {
     iframe {
         width: 30rem;
     }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+    .hero-section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .app-description h1 {
+        margin: 1rem 0;
+        margin-top: 1.5rem;
+        text-align: left;
+    }
+
+    .app-description-download-wrapper {
+        width: 50%;
+    }
+
+    .hero-section .download {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .mockup img {
+        width: 25rem;
+    }
+
+    .hero-section .mockup img {
+        width: 20rem;
+    }
+
+    .about-app-1 {
+        flex-direction: row;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-app-2 {
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        margin-top: 4rem;
+    }
+
+    .video-preview {
+        position: relative;
+        top:10rem;
+    }
+    
+    iframe {
+        border: none;
+        width: 50rem;
+        height: 21.5rem;
+    }
+
+    .download-vision .download {
+        flex-direction: row;
+        padding: 2rem;
+        gap: 5rem;
+    }
+
+    .stat {
+        width: 8rem;
+    }
+
+    .app-features h1, .about-app h1, .app-description h1, .testimonials h1, .vision h1 {
+        font-size: var(--big-headings-desktop);
+    }  
+
+    .hero-section  .download > h2, .about-app h2, .about-app-2-cards .card h2, .about-app-1-cards .card h2, .download-vision .download .download-links h2, .vision > div > div h2, .testimonial-card h6  {
+        font-size: var(--small-headings-desktop);
+    } 
+
+    .app-description > p, .about-app > p, .about-app-2-cards .card p, .about-app-1-cards .card p, .app-features > p, .download-vision .download .download-links > p, .vision > div > div p, .testimonials > p, .socials > p, .partnership-text > p, .testimonial-card p {
+        font-size: var(--small-paragraphs-desktop);
+    } 
+
+    nav {
+        margin: 3rem;
+    }
+
+    .hero-section {
+        padding: 0 3rem 3rem;
+    }
+
+    .about-app, footer {
+        padding: 3rem 4rem;
+    }
+
+    .app-features {
+        padding: 2rem 4rem;
+    }
+
+    .download-vision, .vision, .testimonials {
+        padding: 2rem 4rem;
+    }
+
+    .testimonial-card {
+        max-width: 55rem;
+    }
+    
 }
