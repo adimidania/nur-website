@@ -96,7 +96,7 @@ nav ul li a:hover {
 }
 
 .nav-logo img {
-    width: 5.5rem;
+    width: 5rem;
     background-color: var(--white);
     padding: 0.75rem;
     border-radius: 5px;
@@ -108,9 +108,10 @@ nav ul li a:hover {
     display: none;
 }
 
-.nav-request-features a {
+.nav-request-features button {
+    border: none;
     background-color: var(--dark-purple);
-    padding: 0.55rem 1rem;
+    padding: 0.55rem 0.9rem;
     color: var(--white);
     border-radius: 5px;
 }
