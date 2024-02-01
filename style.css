@@ -304,20 +304,18 @@ nav ul li a:hover {
     color: var(--white);
     opacity: 0.8;
     text-align: justify;
-    position: relative;
-    top: 4rem;
-    
 }
 
 .video-preview {
-    position: relative;
-    top:10rem;
+    width: 100%;
+    margin: 2rem 0;
 }
 
 iframe {
+    margin-top: 2rem;
     border: none;
-    width: 20rem;
-    height: 21.5rem;
+    width: 100%;
+    height: 22.5rem;
 }
 
 .download-vision {
@@ -326,7 +324,7 @@ iframe {
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    padding-top: 10rem;
+    padding-top: 3rem;
     background-image: url('assets/circles.svg');
     background-repeat:repeat;
     background-size: cover;
@@ -479,13 +477,25 @@ iframe {
 .testimonial-card {
     background-color: var(--white);
     padding: 2rem;
+    width: 80%;
+    min-height: 17.5rem;
     border-radius: 5px;
+    display: none;
+}
+
+.testimonial-card.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
 .testimonial-card p {
     color: var(--very-dark-purple);
     font-size: var(--small-paragraphs-mobile);
     opacity: 0.8;
+    margin-top: 1.5rem;
     text-align: justify;
 }
 
@@ -495,12 +505,25 @@ iframe {
     margin: 1rem 0;
 }
 
-.buttons button {
+.carousel-buttons  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.carousel-buttons button {
     border: none;
     background-color: var(--white);
+    opacity: 0.5;
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
+}
+
+.carousel-buttons button.active {
+    opacity: 1;
 }
 
 footer {
@@ -627,10 +650,6 @@ footer {
         justify-content: center;
         gap: 3rem;
     }
-
-    iframe {
-        width: 30rem;
-    }
 }
 
 /* Desktop */
@@ -682,15 +701,8 @@ footer {
         margin-top: 4rem;
     }
 
-    .video-preview {
-        position: relative;
-        top:10rem;
-    }
-    
     iframe {
-        border: none;
-        width: 50rem;
-        height: 21.5rem;
+        height: 25rem;
     }
 
     .download-vision .download {
